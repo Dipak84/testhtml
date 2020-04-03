@@ -1,0 +1,51 @@
+.top-header{
+    background-color: var(--header-background);
+    color: var(--header-text-color);
+    height: var(--header-height);
+    padding-left: var(--header-start-padding);
+    padding-right: var(--header-end-padding);
+
+    a,a:hover,a:focus{
+        color: currentColor;
+    }
+
+    .btn{
+        color: currentColor;
+        font-size: 0.825rem;
+
+        &:focus,&:hover,&:active{
+            box-shadow: none;
+        }
+    }
+    .dropdown-menu{
+        min-width: 7rem;
+    }
+    .dropdown-item{
+        font-size: 0.825rem;
+    }
+}
+
+.top-header-counter {
+    margin-left: 5rem;
+    span{
+        font-size: 0.875rem;
+    }
+    span ~ span{
+        margin-left: 2rem;
+    }
+}
+
+.menu-toggle{
+    @include square(var(--header-height));
+    padding: 0;
+    &:focus,&:hover,&:active{
+        box-shadow: none;
+    }
+    .menubar{
+        display: block;
+        height: 2px;
+        width: 20px;
+        background: #ffffff;
+        margin: 5px 0;
+    }
+}

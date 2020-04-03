@@ -1,0 +1,229 @@
+.dashboard-wrapper{
+    background: var(--dashboard-background);
+}
+
+
+.summary-count{
+    padding: 0 .5rem;
+    text-align: center;
+    max-width: 5.5rem;
+    min-width: 3rem;
+    margin: 0 auto;
+    span{
+        line-height: 1.4;
+        font-weight: 500;
+    }
+    label{
+        margin-bottom: 0;
+        line-height: 1.2;
+    }
+}
+
+.dashboard-card{
+    border: none;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 1rem;
+    .card-body{
+        padding: 0.625rem .5rem;
+        min-height: 4.8125rem;
+        background: #ffffff;
+        @include shadow(var(--shadow-1));
+        @include radius(var(--radius-3));
+    }
+
+    &:after{
+        content: "";
+        position: absolute;
+        left: 1rem;
+        right: 1rem;
+        top:0.75rem;
+        height: 100%;
+        @include radius(var(--radius-3));
+        z-index: -1;
+        background: transparent;
+    }
+
+    &.bg-1{
+        &:after{
+            background: var(--yellow);
+        }
+    }
+    &.bg-2{
+        &:after{
+            background: var(--red);
+        }
+    }
+    &.bg-3{
+        &:after{
+            background: var(--green);
+        }
+    }
+}
+
+.square-block{
+    padding: 0 !important;
+    
+    @include square-cell(1.25rem);    
+
+    &.blank-cell{
+        border-color:transparent;
+    }
+
+    &.indicator-value{
+        
+        text-align: right;
+        font-size: 0.625rem !important;
+        // width: 1.5rem;
+        // min-width: 1.5rem;
+        padding-right: .3rem !important;
+        color:var(--royal-blue);
+    }
+}
+
+.employees-table-wrapper{
+    font-size: .825rem;
+
+    .table {
+        thead{
+            // box-shadow: ;
+            @include shadow(0 1px 0px 0px #dee2e6);
+
+            th{
+                padding: 0;
+                
+
+                &.square-block{
+                    border: 1px solid #dee2e6;
+
+                    &.blank-cell{
+       
+                        border-color: transparent;
+                    }
+                }
+            }
+        }
+
+        tbody{
+            th{
+                &.current-status{
+                    border-left: 2px solid var(--red);
+                    position: relative;
+
+                    &:before{
+                        content: "";
+                        border-top: 5px solid transparent;
+                        border-bottom: 5px solid transparent;
+                        border-left: 7px solid red;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                    }
+                }
+            }
+        }
+
+    }
+ 
+    .table tbody td,.table tbody th{
+        vertical-align: middle;
+        padding: .5rem;
+        font-size: .75rem;
+        border: 1px solid #dee2e6;
+    }
+
+    table{
+        width: 100%;
+    }
+
+    .table .top-panel-header > tr > th{
+        border:none;
+        // position: sticky;
+        // top: 0;
+        background: var(--light);
+        padding:0;
+        vertical-align: bottom;
+    }
+    .table tbody td{
+        text-align: center;
+    }
+    .small-text{
+        font-size: .625rem;
+    }
+}
+
+.schedule-btns{
+    .btn{
+        padding: 0;
+        @include square(1.5rem);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.825rem;
+    }
+}
+.demand-curve-graph{
+    display: none;
+    img{
+        width: 100%;
+    }
+}
+
+.toggle-content-wrapper{
+    &.open{
+        .summary-card-view{
+            display: none;
+        }
+        .demand-curve-graph{
+            display: block;
+        }
+    }
+}
+
+.break-cell{
+    position: relative;
+}
+
+.break-text{
+    display: block;
+    background: var(--light-yellow);
+    color:var(--dark-grey1);
+    padding:1px 5px;
+
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    height: 100%;
+    width: 16px;
+
+    // -webkit-writing-mode:vertical-rl;
+    //     -ms-writing-mode:tb-rl;
+    //     direction: ltr;
+    //         writing-mode:vertical-rl;
+    // -webkit-text-orientation:mixed;
+    //         text-orientation:mixed;
+    // @include rotate(180);
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    text-indent: 9999;
+    color: transparent;
+    
+    &:before{
+        content: "Break";
+        color:#000;
+        top: 34%;
+        position: absolute;
+        transform: rotate(-90deg);
+        right: -10px;
+    }
+
+    &.left{
+        left: 0;
+    }
+    &.right{
+        right: 0;
+    }
+}

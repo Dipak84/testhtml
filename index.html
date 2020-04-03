@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, user-scalable=no"
+        />
+        <title>Landing Page</title>
+
+        <!-- CSS START -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="assets/css/vendor/bootstrap/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link href="assets/css/icon.css" rel="stylesheet" />
+        <link href="assets/css/main.css" rel="stylesheet" />
+    </head>
+    <body>
+        <main class="d-flex flex-column full-height">
+            <header class="top-header d-flex align-items-center">
+                <div
+                    class="header-wrapper d-flex align-items-center justify-content-between full-width"
+                >
+                    <div class="logo-wrapper d-flex align-items-center">
+                        <button class="menu-toggle btn mr-1">
+                            <span class="menubar"></span>
+                            <span class="menubar"></span>
+                            <span class="menubar"></span>
+                        </button>
+                        <a href="#"
+                            ><img src="assets/images/logo.png" alt="ALDI"
+                        /></a>
+                    </div>
+                    <div class="top-header-counter d-flex mr-auto">
+                        <span>DIV: 440</span>
+                        <span>Store: 2</span>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Jessica
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
+                          <button class="dropdown-item" type="button">Action</button>
+                          <button class="dropdown-item" type="button">Another action</button>
+                          <button class="dropdown-item" type="button">Something else here</button>
+                        </div>
+                      </div>
+                </div>
+            </header>
+            <section
+                class="dashboard-wrapper full-height scrollbar-hidden"
+            >
+                <sidebar
+                    class="sidebar scrollbar-auto p-3"
+                >
+  
+                    <div class="major-nav">
+                        <a href="#" class="d-block title-8 text-uppercase text-medium text-color-1" icon-with-text>
+                            <i class="icon-dashboard"></i>
+                            Dashboard
+                        </a>
+                        <a href="#" class="d-block title-8 text-uppercase text-medium text-color-1" icon-with-text>
+                            <i class="icon-calendar"></i>
+                            Daily Schedule
+                        </a>    
+                    </div>
+
+                    <div class="sidebar-menu mt-5">
+                        <div class="sidebar-menu_link">
+                            <a class="title-9 text-uppercase d-block text-medium" icon-with-text data-toggle="collapse" href="#menu1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <i class="icon-position"></i> View by position
+                            </a>
+                            <div class="collapse" id="menu1">
+                                <div class="d-flex align-items-center title-10 py-1">
+                                    <input class="mr-1" type="checkbox" value="" id="check1">
+                                    <label class="form-check-label text-truncate" for="check1">
+                                      Salary Manager
+                                    </label>
+                                </div>
+                                <div class="d-flex align-items-center title-10 py-1">
+                                    <input class="mr-1" type="checkbox" value="" id="check2">
+                                    <label class="form-check-label text-truncate" for="check2">
+                                      Assistant Manager
+                                    </label>
+                                </div>
+                                <div class="d-flex align-items-center title-10 py-1">
+                                    <input class="mr-1" type="checkbox" value="" id="check3">
+                                    <label class="form-check-label text-truncate" for="check3">
+                                      Lead Associate
+                                    </label>
+                                </div>
+                                <div class="d-flex align-items-center title-10 py-1">
+                                    <input class="mr-1" type="checkbox" value="" id="check4">
+                                    <label class="form-check-label text-truncate" for="check4">
+                                      Associate
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-menu_link">
+                            <a class="title-9 text-uppercase d-block text-medium" icon-with-text data-toggle="collapse" href="#menu2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <i class="icon-task"></i> View by Tasks
+                            </a>
+                            <div class="collapse" id="menu2">
+                                <div class="d-flex align-items-center title-10 py-1">
+                                    <input class="mr-1" type="checkbox" value="" id="check5">
+                                    <label class="form-check-label text-truncate" for="check5">
+                                      Cashier
+                                    </label>
+                                </div>
+                                <div class="d-flex align-items-center title-10 py-1">
+                                    <input class="mr-1" type="checkbox" value="" id="check6">
+                                    <label class="form-check-label text-truncate" for="check6">
+                                      AF Maintenance
+                                    </label>
+                                </div>
+                                <div class="d-flex align-items-center title-10 py-1">
+                                    <input class="mr-1" type="checkbox" value="" id="check7">
+                                    <label class="form-check-label text-truncate" for="check7">
+                                      Sales Floor Maintenance
+                                    </label>
+                                </div>
+                                <div class="d-flex align-items-center title-10 py-1">
+                                    <input class="mr-1" type="checkbox" value="" id="check8">
+                                    <label class="form-check-label text-truncate" for="check8">
+                                      Leadership/Admin Duties
+                                    </label>
+                                </div>
+                                <div class="d-flex align-items-center title-10 py-1">
+                                    <input class="mr-1" type="checkbox" value="" id="check9">
+                                    <label class="form-check-label text-truncate" for="check9">
+                                      Breaks
+                                    </label>
+                                </div>
+                                <div class="d-flex align-items-center title-10 py-1">
+                                    <input class="mr-1" type="checkbox" value="" id="check10">
+                                    <label class="form-check-label text-truncate" for="check10">
+                                      Non Operational Tasks
+                                    </label>
+                                </div>
+                                <div class="d-flex align-items-center title-10 py-1">
+                                    <input class="mr-1" type="checkbox" value="" id="check11">
+                                    <label class="form-check-label text-truncate" for="check11">
+                                      AF Food
+                                    </label>
+                                </div>
+                                <div class="d-flex align-items-center title-10 py-1">
+                                    <input class="mr-1" type="checkbox" value="" id="check12">
+                                    <label class="form-check-label text-truncate" for="check12">
+                                      Closing Labor
+                                    </label>
+                                </div>
+                                <div class="nesting-menu-wrapper">
+                                    <div class="d-flex align-items-center title-10 py-1">
+                                        <input class="mr-1" type="checkbox" value="" id="check13">
+                                        <label class="form-check-label text-truncate" for="check13">
+                                        Cases
+                                        </label>
+                                    </div>
+                                    <div class="nesting-filters pl-3">
+                                        <div class="d-flex align-items-center title-10 py-1">
+                                            <input class="mr-1" type="checkbox" value="" id="nestingcheck1">
+                                            <label class="form-check-label text-truncate" for="nestingcheck1">
+                                              Cooler
+                                            </label>
+                                        </div>
+                                        <div class="d-flex align-items-center title-10 py-1">
+                                            <input class="mr-1" type="checkbox" value="" id="nestingcheck2">
+                                            <label class="form-check-label text-truncate" for="nestingcheck2">
+                                              Freezer
+                                            </label>
+                                        </div>
+                                        <div class="d-flex align-items-center title-10 py-1">
+                                            <input class="mr-1" type="checkbox" value="" id="nestingcheck3">
+                                            <label class="form-check-label text-truncate" for="nestingcheck3">
+                                              Grocery
+                                            </label>
+                                        </div>
+                                        <div class="d-flex align-items-center title-10 py-1">
+                                            <input class="mr-1" type="checkbox" value="" id="nestingcheck4">
+                                            <label class="form-check-label text-truncate" for="nestingcheck4">
+                                              Bread
+                                            </label>
+                                        </div>
+                                        <div class="d-flex align-items-center title-10 py-1">
+                                            <input class="mr-1" type="checkbox" value="" id="nestingcheck5">
+                                            <label class="form-check-label text-truncate" for="nestingcheck5">
+                                              Fresh Meal
+                                            </label>
+                                        </div>
+                                        <div class="d-flex align-items-center title-10 py-1">
+                                            <input class="mr-1" type="checkbox" value="" id="nestingcheck6">
+                                            <label class="form-check-label text-truncate" for="nestingcheck6">
+                                              Alcohol
+                                            </label>
+                                        </div>
+                                        <div class="d-flex align-items-center title-10 py-1">
+                                            <input class="mr-1" type="checkbox" value="" id="nestingcheck7">
+                                            <label class="form-check-label text-truncate" for="nestingcheck7">
+                                              Produce
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+               
+                </sidebar>
+                <article class="dashboard-content full-height p-3">
+                    <div class="p-2 d-flex flex-column light-bg full-height">
+                      
+                        <div class="employees-table-wrapper px-1 table-responsive full-height">
+                          
+                            <table class="table table-borderless mb-0">
+                                <thead>
+                                    <tr>
+                                        <th width="200" rowspan="6" class="text-center">
+                                            <div class="schedule-btns mb-4">
+                                                <h3 class="title-5 text-color-1 mb-2 text-nowrap">
+                                                    Daily Schedule
+                                                </h3>
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <button class="btn prev-btn btn-sm btn-secondary">
+                                                        <i class="icon-arrow-left"></i>
+                                                    </button>
+                                                    <h4 class="px-2 title-9">
+                                                        <strong class="text-nowrap">7th Feb, 2020</strong>
+                                                        <small class="d-block text-nowrap">Friday, 08:15 AM</small>
+                                                    </h4>
+                                                    <button class="btn next-btn btn-sm btn-secondary">
+                                                        <i class="icon-arrow-right"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th width="70" rowspan="6">
+                                            <button class="btn graph-btn btn-secondary btn-full-rounded mb-4 mx-4"><i class="icon-statebar"></i></button>
+                                        </th>
+                                        
+                                    </tr>
+
+                                    <!-- Summary card view start -->
+                                    <tr class="summary-data">
+                                        <th width="1.5%" rowspan="5" class="square-block blank-cell"></th>
+                                        <th colspan="8" rowspan="5">
+                                            <div class="card dashboard-card mx-2 mt-1 mb-4 bg-1">
+                                                <div class="card-body">
+                                                    <div class="row no-gutters flex-nowrap">
+                                                        <div class="col">
+                                                            <div class="summary-count">
+                                                                <span class="d-block title-6">160</span>
+                                                                <label class="d-block title-11">Total Demand Hours</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="summary-count">
+                                                                <span class="d-block title-6">152</span>
+                                                                <label class="d-block title-11">Total Scheduled Hours</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th colspan="12" rowspan="5">
+                                            <div class="card dashboard-card mx-2 mt-1 mb-4 bg-2">
+                                                <div class="card-body">
+                                                    <p class="mb-1 title-11">Current Hour (8 - 9am) Coverage</p>
+                                                    <div class="row no-gutters flex-nowrap">
+                                                        <div class="col">
+                                                            <div class="summary-count">
+                                                                <span class="d-block title-6">40</span>
+                                                                <label class="d-block title-11">Demand</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="summary-count">
+                                                                <span class="d-block title-6">50</span>
+                                                                <label class="d-block title-11">Actual</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="summary-count">
+                                                                <span class="d-block title-6">10</span>
+                                                                <label class="d-block title-11">Over</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="summary-count">
+                                                                <span class="d-block title-6">0</span>
+                                                                <label class="d-block title-11">Under</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th colspan="12" rowspan="5">
+                                            <div class="card dashboard-card mx-2 mt-1 mb-4 bg-3">
+                                                <div class="card-body">
+                                                    <p class="mb-1 title-11">Next Hour (9 - 10am) Coverage</p>
+                                                    <div class="row no-gutters flex-nowrap">
+                                                        <div class="col">
+                                                            <div class="summary-count">
+                                                                <span class="d-block title-6">60</span>
+                                                                <label class="d-block title-11">Demand</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="summary-count">
+                                                                <span class="d-block title-6">60</span>
+                                                                <label class="d-block title-11">Actual</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="summary-count">
+                                                                <span class="d-block title-6">0</span>
+                                                                <label class="d-block title-11">Over</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="summary-count">
+                                                                <span class="d-block title-6">0</span>
+                                                                <label class="d-block title-11">Under</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th colspan="20" class="text-right" rowspan="5">
+                                            <div class="d-inline-block mb-4 pr-1 employee-tabs-btn-group text-left">
+                                                <label class="title-8 mb-1 d-block"><strong>Employees</strong></label>    
+                                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                                    <label class="btn btn-sm btn-secondary active">
+                                                        <input type="radio" name="options" id="option1" checked=""> All
+                                                    </label>
+                                                    <label class="btn btn-sm btn-secondary">
+                                                        <input type="radio" name="options" id="option2"> Working now
+                                                    </label>
+                                                    </div>
+                                            </div>
+                                        </th>
+                                    </tr>
+
+                                    <!-- Summary card view end -->
+
+                                    <!-- Coverage demand graph start -->
+                                    <tr class="coverage-demand d-none">
+                                        <th width="1.5%" class="square-block blank-cell indicator-value">&nbsp;</th>
+                                        <th colspan="52" class="square-block blank-cell">
+                                            <h4 class="title-6 mt-1">Daily Coverage</h4>
+                                            <div class="d-flex mb-2">
+                                                <span class="title-10 text-regular mr-3">Coverage Demand</span>
+                                                <span class="title-10 text-regular mr-3 red-text">Over Covered</span>
+                                                <span class="title-10 text-regular yellow-text">Under Covered</span>
+                                            </div>
+                                        </th>
+                                    </tr>
+
+                                    <tr class="coverage-demand d-none">
+                                        <th width="1.5%" class="square-block blank-cell indicator-value">10</th>
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        <th width="1.5%" colspan="50" class="square-block blank-cell"></th>
+                                    </tr>
+                                    <tr class="coverage-demand d-none">
+                                        <th width="1.5%" class="square-block blank-cell indicator-value">8</th>
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        <th width="1.5%" class="square-block yellow-bg"></th>
+                                        <th width="1.5%" colspan="49" class="square-block blank-cell"></th>
+                                    </tr>
+                                    <tr class="coverage-demand d-none">
+                                        <th width="1.5%" class="square-block blank-cell indicator-value">4</th>
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        <th width="1.5%" class="square-block yellow-bg"></th>
+                                        <th width="1.5%" colspan="49" class="square-block blank-cell"></th>
+                                    </tr>
+                                    <tr class="coverage-demand d-none">
+                                        <th width="1.5%" class="square-block blank-cell indicator-value">2</th>
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        <th width="1.5%" class="square-block yellow-bg"></th>
+                                        
+                                        
+                                        <th width="1.5%" class="square-block green-bg"></th>
+    
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        <th width="1.5%" class="square-block green-bg"></th>
+    
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        <th width="1.5%" class="square-block green-bg"></th>
+    
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        <th width="1.5%" class="square-block green-bg"></th>
+    
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        <th width="1.5%" class="square-block green-bg"></th>
+
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        <th width="1.5%" class="square-block green-bg"></th>
+
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        <th width="1.5%" class="square-block green-bg"></th>
+
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        <th width="1.5%" class="square-block green-bg"></th>
+
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        <th width="1.5%" class="square-block green-bg"></th>
+
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                        <th width="1.5%" class="square-block green-bg"></th>
+                                    </tr>
+                                    <!-- Coverage demand graph end -->
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <th rowspan="2">Employees</th>
+                                        <th colspan="2" rowspan="2">Scheduled</th>
+                                        <th colspan="4">6am</th>
+                                        <th colspan="4">7am</th>
+                                        <th colspan="4" class="current-status">8am</th>
+                                        <th colspan="4">9am</th>
+                                        <th colspan="4">10am</th>
+                                        <th colspan="4">11am</th>
+                                        <th colspan="4">12pm</th>
+                                        <th colspan="4">1pm</th>
+                                        <th colspan="4">2pm</th>
+                                        <th colspan="4">3pm</th>
+                                        <th colspan="4">4pm</th>
+                                        <th colspan="4">5pm</th>
+                                        <th colspan="4">6pm</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="square-block green-bg"></th>
+                                        <th class="square-block green-bg"></th>
+                                        <th class="square-block green-bg"></th>
+                                        <th class="square-block green-bg"></th>
+    
+                                        <th class="square-block green-bg"></th>
+                                        <th class="square-block green-bg"></th>
+                                        <th class="square-block green-bg"></th>
+                                        <th class="square-block green-bg"></th>
+    
+                                        <th class="square-block red-bg"></th>
+                                        <th class="square-block red-bg"></th>
+                                        <th class="square-block red-bg"></th>
+                                        <th class="square-block red-bg"></th>
+    
+                                        <th class="square-block green-bg"></th>
+                                        <th class="square-block green-bg"></th>
+                                        <th class="square-block green-bg"></th>
+                                        <th class="square-block green-bg"></th>
+    
+                                        <th class="square-block green-bg"></th>
+                                        <th class="square-block green-bg"></th>
+                                        <th class="square-block green-bg"></th>
+                                        <th class="square-block green-bg"></th>
+    
+                                        <th class="square-block green-bg"></th>
+                                        <th class="square-block yellow-bg"></th>
+                                        <th class="square-block yellow-bg"></th>
+                                        <th class="square-block green-bg"></th>
+    
+                                        <th class="square-block green-bg"></th>
+                                        <th class="square-block green-bg"></th>
+                                        <th class="square-block green-bg"></th>
+                                        <th class="square-block green-bg"></th>
+    
+                                        <th class="square-block green-bg"></th>
+                                        <th class="square-block green-bg"></th>
+                                        <th class="square-block green-bg"></th>
+                                        <th class="square-block green-bg"></th>
+    
+                                        <th class="square-block green-bg"></th>
+                                        <th class="square-block green-bg"></th>
+                                        <th class="square-block green-bg"></th>
+                                        <th class="square-block green-bg"></th>
+    
+                                        <th class="square-block green-bg"></th>
+                                        <th class="square-block green-bg"></th>
+                                        <th class="square-block green-bg"></th>
+                                        <th class="square-block green-bg"></th>
+    
+                                        <th class="square-block green-bg"></th>
+                                        <th class="square-block green-bg"></th>
+                                        <th class="square-block green-bg"></th>
+                                        <th class="square-block green-bg"></th>
+    
+                                        <th class="square-block green-bg"></th>
+                                        <th class="square-block green-bg"></th>
+                                        <th class="square-block green-bg"></th>
+                                        <th class="square-block green-bg"></th>
+    
+                                        <th class="square-block green-bg"></th>
+                                        <th class="square-block green-bg"></th>
+                                        <th class="square-block green-bg"></th>
+                                        <th class="square-block green-bg"></th>
+                                        </tr>
+
+                                        <tr>
+                                        <th rowspan="2">Jennifer Toburen <span class="d-block small-text">Salary Mgr</span></th>
+                                        <th colspan="2" rowspan="2">12 Hrs <span class="d-block small-text">6am - 6pm</span></th>
+                                        <td colspan="8" rowspan="2" class="light-bg1">Freezer</td>
+                                        <td colspan="12" class="light-bg2">Cashier</td>
+                                        <td colspan="8" rowspan="2" class="light-bg3">Maintenance</td>
+                                        <td colspan="12" rowspan="2" class="light-bg4">Admin</td>
+                                        <td colspan="8" rowspan="2" class="light-bg5">NonOps</td>
+                                        <td colspan="4" rowspan="2" class="light-bg6">Closing</td>
+                                        </tr>
+                                        <tr>
+                                        <td colspan="12" class="light-bg1">Grocery</td>
+                                        </tr>
+    
+                                        <tr>
+                                        <th>Heather Ortiz <span class="d-block small-text">Assistant Mgr</span></th>
+                                        <th colspan="2">8 Hrs <span class="d-block small-text">6am - 2pm</span></th>
+                                        <td colspan="16" class="light-bg1">Bread</td>
+                                        <td colspan="4"></td>
+                                        <td colspan="4"></td>
+                                        <td colspan="8" class="light-bg2">Cashier</td>
+                                        <td colspan="4"></td>
+                                        <td colspan="4"></td>
+                                        <td colspan="4"></td>
+                                        <td colspan="4"></td>
+                                        <td colspan="4"></td>
+                                        </tr>
+    
+                                        <tr>
+                                        <th>Ashley Diouhy <span class="d-block small-text">Assistant Mgr</span></th>
+                                        <th colspan="2">11 Hrs <span class="d-block small-text">7am - 5pm</span></th>
+                                        <td colspan="4"></td>
+                                        <td colspan="16" class="light-bg2">Cashier</td>
+                                        <td colspan="8" class="light-bg3">Maintenance</td>
+                                        <td colspan="16" class="light-bg4">Admin</td>
+                                        <td colspan="4"></td>
+                                        <td colspan="4"></td>
+                                        </tr>
+    
+                                        <tr>
+                                        <th>Ismael Motors <span class="d-block small-text">Lead Mgr</span></th>
+                                        <th colspan="2">8 Hrs <span class="d-block small-text">7am - 2pm</span></th>
+                                        <td colspan="4"></td>
+                                        <td colspan="8" class="light-bg1">Fresh Meat</td>
+                                        <td colspan="8" class="light-bg2">Cashier</td>
+                                        <td colspan="4" class="light-bg1 break-cell"><span class="break-text left">Break</span></td>
+                                        <td colspan="8" class="light-bg3">Maintenance</td>
+                                        <td colspan="4"></td>
+                                        <td colspan="4"></td>
+                                        <td colspan="4"></td>
+                                        <td colspan="4"></td>
+                                        <td colspan="4"></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                        <th rowspan="2">Ansar Ali <span class="d-block small-text">Associate</span></th>
+                                        <th colspan="2" rowspan="2">10 Hrs <span class="d-block small-text">8am - 5pm</span></th>
+                                        <td colspan="4" rowspan="2"></td>
+                                        <td colspan="4" rowspan="2"></td>
+                                        <td colspan="4" class="light-bg2">Cashier</td>
+                                        <td colspan="8" class="light-bg3" rowspan="2">Maintenance</td>
+                                        <td colspan="12" class="light-bg4" rowspan="2">Admin</td>
+                                        <td colspan="8" class="light-bg5" rowspan="2">NonOps</td>
+                                        <td colspan="4" class="light-bg6" rowspan="2">Closing</td>
+                                        <td colspan="4" rowspan="2"></td>
+                                        <td colspan="4" rowspan="2"></td>
+                                        </tr>
+                                        <tr>
+                                        <td colspan="4" class="light-bg1">Freezer</td>
+                                        </tr>
+    
+                                        <tr>
+                                        <th>Kristyn Pawul<span class="d-block small-text">Associate</span></th>
+                                        <th colspan="2">7 Hrs <span class="d-block small-text">8am - 3pm</span></th>
+                                        <td colspan="4"></td>
+                                        <td colspan="4"></td>
+                                        
+                                        <td colspan="8" class="light-bg3">Maintenance</td>
+                                        <td colspan="8" class="light-bg2">Cashier</td>
+                                        <td colspan="8" class="light-bg1 break-cell">Freezer <span class="break-text right">Break</span></td>
+                                        <td colspan="4" class="light-bg2">Cashier</td>
+                                        <td colspan="4"></td>
+                                        <td colspan="4"></td>
+                                        <td colspan="4"></td>
+                                        <td colspan="4"></td>
+                                        </tr>
+    
+                                        <tr>
+                                        <th>Cheyenne Ellis<span class="d-block small-text">Associate</span></th>
+                                        <th colspan="2">7 Hrs <span class="d-block small-text">8am - 3pm</span></th>
+                                        <td colspan="4"></td>
+                                        <td colspan="4"></td>
+                                        
+                                        <td colspan="8" class="light-bg4">Admin</td>
+                                        <td colspan="12" class="light-bg1">Grocery</td>
+                                        <td colspan="12" class="light-bg2">Cashier</td>
+                                        <td colspan="4" class="light-bg5">NonOps</td>
+                                        <td colspan="4"></td>
+                                        <td colspan="4"></td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                        
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <!-- JS START -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <script src="assets/js/vendor/bootstrap/popper.js"></script>
+        <script src="assets/js/vendor/bootstrap/bootstrap.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+        
+
+                $(".menu-toggle").click(function(e) {
+                    $('.sidebar').toggleClass('open-sidebar');
+                    e.stopPropagation();
+                });
+            
+                $(document).click(function(e) {
+                    if (!$(e.target).is('.sidebar, .sidebar *')) {
+                        $('.sidebar').removeClass('open-sidebar');
+                    }
+                });
+
+                $(".graph-btn").click(function(e) {
+                   
+                    if ($('.coverage-demand').hasClass('d-none')){
+    
+                        $('.summary-data').addClass('d-none');
+                        $('.coverage-demand').removeClass('d-none');
+                    } else {
+    
+                        $('.summary-data').removeClass('d-none');
+                        $('.coverage-demand').addClass('d-none');
+                    }
+            
+                });
+
+                
+
+                
+
+            });
+        </script>
+    </body>
+</html>

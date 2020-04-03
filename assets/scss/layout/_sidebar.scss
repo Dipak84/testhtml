@@ -1,0 +1,40 @@
+.sidebar{
+    width: var(--sidebar-width);
+    background: var(--sidebar-background);
+    transition: 250ms linear 0s;
+    position: fixed;
+    left: 0;
+    top: var(--header-height);
+    bottom: 0;
+    transition: 300ms ease 0s;
+    @include shadow(var(--shadow-1));
+    @include translate(calc((var(--sidebar-width) + 1rem) * -1), 0);
+    z-index: 10;
+    opacity: 0;
+
+    &.open-sidebar{
+        @include translate(0, 0);
+        opacity: 1;
+    }
+}
+
+
+[icon-with-text]{
+    position: relative;
+    padding: .3rem 1.5rem;
+    padding-right: 0;
+
+    i{
+        position: absolute;
+        left: 0;
+        top: 50%;
+        font-size: 1rem;
+        @include translate(0, -50%);
+    }
+}
+
+.sidebar-menu_link{
+    & + .sidebar-menu_link{
+        margin-top: .5rem;
+    }
+}
